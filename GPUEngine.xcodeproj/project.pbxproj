@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84383B6421232A8C0034A6AC /* Process.m in Sources */ = {isa = PBXBuildFile; fileRef = 84383B6321232A8C0034A6AC /* Process.m */; };
 		84FE909F212310D7005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE909D212310D7005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90AE212310F8005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90AC212310F8005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90BD21231155005AF842 /* GPUERenderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B321231155005AF842 /* GPUERenderTask.m */; };
@@ -79,6 +80,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84383B6221232A8C0034A6AC /* Process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Process.h; sourceTree = "<group>"; };
+		84383B6321232A8C0034A6AC /* Process.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Process.m; sourceTree = "<group>"; };
 		84FE909A212310D7005AF842 /* GPUEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FE909D212310D7005AF842 /* GPUEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUEngine.h; sourceTree = "<group>"; };
 		84FE909E212310D7005AF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				84FE911521231473005AF842 /* Info.plist */,
 				84FE911621231473005AF842 /* main.m */,
 				84FE911821231473005AF842 /* GPU_Demo_Mac.entitlements */,
+				84383B6221232A8C0034A6AC /* Process.h */,
+				84383B6321232A8C0034A6AC /* Process.m */,
 			);
 			path = "GPU Demo Mac";
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84383B6421232A8C0034A6AC /* Process.m in Sources */,
 				84FE911721231473005AF842 /* main.m in Sources */,
 				84FE910F21231472005AF842 /* AppDelegate.m in Sources */,
 			);
