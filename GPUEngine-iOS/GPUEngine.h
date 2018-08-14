@@ -14,6 +14,28 @@ FOUNDATION_EXPORT double GPUEngineVersionNumber;
 //! Project version string for GPUEngine.
 FOUNDATION_EXPORT const unsigned char GPUEngineVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <GPUEngine/PublicHeader.h>
+// Core
+#import <GPUEngine/GPUEEngine.h>
+#import <GPUEngine/GPUETask.h>
+#import <GPUEngine/GPUEProcess.h>
 
+// Task Types
+#import <GPUEngine/GPUEBlitTask.h>
+#import <GPUEngine/GPUEComputeTask.h>
+#import <GPUEngine/GPUERenderTask.h>
 
+// Generic Tasks
+#import <GPUEngine/GPUEBufferToTexture.h>
+#import <GPUEngine/GPUEDrawFlatMesh.h>
+#import <GPUEngine/GPUEDrawTexture.h>
+#import <GPUEngine/GPUETexturePresent.h>
+
+// Sample Tasks
+#import <GPUEngine/GPUEComputePyramid.h>
+
+// Data Types
+#import <GPUEngine/GPUEMesh.h>
+#import <GPUEngine/GPUEShaderTypes.h>
+
+// Utilities
+#import <GPUEngine/GPUECGImageUtilities.h>

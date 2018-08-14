@@ -1,18 +1,18 @@
 //
-//  DrawFlatMesh.m
+//  GPUEDrawFlatMesh.m
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-27.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "DrawFlatMesh.h"
+#import "GPUEDrawFlatMesh.h"
 
-#import "Mesh.h"
+#import "GPUEMesh.h"
 
-@implementation DrawFlatMesh
+@implementation GPUEDrawFlatMesh
 
-- (instancetype)initWithWithLibrary:(id<MTLLibrary>)library host:(id<GPURenderHost>)host {
+- (instancetype)initWithWithLibrary:(id<MTLLibrary>)library host:(id<GPUERenderHost>)host {
     return [super initWithWithLibrary:library vertexFunction:@"vertexPassThrough" fragmentFunction:@"constantColor" host:host];
 }
 

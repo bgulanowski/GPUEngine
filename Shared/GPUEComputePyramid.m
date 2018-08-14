@@ -6,9 +6,9 @@
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "ComputePyramid.h"
+#import "GPUEComputePyramid.h"
 
-@implementation ComputePyramid
+@implementation GPUEComputePyramid
 
 @synthesize threadCount=_threadCount;
 @synthesize outBuffer=_outBuffer;

@@ -6,11 +6,11 @@
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "GPUComputeTask.h"
+#import "GPUEComputeTask.h"
 
 #import <simd/simd.h>
 
-@interface ComputePyramid : GPUComputeTask<BufferProducer>
+@interface GPUEComputePyramid : GPUEComputeTask<GPUEBufferProducer>
 
 - (instancetype)initWithLibrary:(id<MTLLibrary>)library kernelFunction:(NSString *)kernelName NS_UNAVAILABLE;
 

@@ -1,18 +1,18 @@
 //
-//  TexturePresent.m
+//  GPUETexturePresent.m
 //  Noise Lab-Mac
 //
 //  Created by Brent Gulanowski on 2018-06-20.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "TexturePresent.h"
+#import "GPUETexturePresent.h"
 
-@interface TexturePresent ()
+@interface GPUETexturePresent ()
 @property (nonatomic, readonly) id<MTLTexture> destination;
 @end
 
-@implementation TexturePresent
+@implementation GPUETexturePresent
 
 - (id<MTLTexture>)texture {
     return (id<MTLTexture>)[self resource];

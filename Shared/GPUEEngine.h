@@ -1,5 +1,5 @@
 //
-//  GPUEngine.h
+//  GPUEEngine.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GPUTask.h"
+#import "GPUETask.h"
 
-@interface GPUEngine : NSObject
+@interface GPUEEngine : NSObject
 
 @property (nonatomic, readonly) id<MTLDevice> device;
 @property (nonatomic, readonly) id<MTLLibrary> library;
@@ -19,7 +19,7 @@
 - (instancetype)initWithDevice:(id<MTLDevice>)device; // default library
 - (instancetype)init; // default device and default library
 
-- (void)runTasks:(NSArray<id<GPUTask>> *)tasks withDrawable:(id<MTLDrawable>)drawable;
-- (void)runTasks:(NSArray<id<GPUTask>> *)tasks;
+- (void)runTasks:(NSArray<id<GPUETask>> *)tasks withDrawable:(id<MTLDrawable>)drawable;
+- (void)runTasks:(NSArray<id<GPUETask>> *)tasks;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  GPUBlitTask.h
+//  GPUEBlitTask.h
 //  Noise Lab-Mac
 //
 //  Created by Brent Gulanowski on 2018-06-20.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GPUTask.h"
+#import "GPUETask.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPUBlitTask : NSObject<GPUTask>
+@interface GPUEBlitTask : NSObject<GPUETask>
 
 @property (nonatomic, readonly) id<MTLResource> resource;
 

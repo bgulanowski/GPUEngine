@@ -1,20 +1,20 @@
 //
-//  GPUComputeTask.m
+//  GPUEComputeTask.m
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "GPUComputeTask.h"
+#import "GPUEComputeTask.h"
 
-@interface GPUComputeTask ()
+@interface GPUEComputeTask ()
 
 @property (nonatomic, readonly) id<MTLComputePipelineState> pipeline;
 
 @end
 
-@implementation GPUComputeTask
+@implementation GPUEComputeTask
 
 @dynamic threadCount;
 

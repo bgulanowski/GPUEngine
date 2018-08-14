@@ -1,5 +1,5 @@
 //
-//  CGImageUtilities.h
+//  GPUECGImageUtilities.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.

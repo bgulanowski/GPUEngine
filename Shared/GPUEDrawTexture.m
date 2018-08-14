@@ -1,14 +1,14 @@
 //
-//  DrawTexture.m
+//  GPUEDrawTexture.m
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "DrawTexture.h"
+#import "GPUEDrawTexture.h"
 
-#import "ShaderTypes.h"
+#import "GPUEShaderTypes.h"
 
 static Vertex quadVertices[] = {
     {{ -1,  1, 0, 1 }, {  0,  1 }},
@@ -17,16 +17,16 @@ static Vertex quadVertices[] = {
     {{  1, -1, 0, 1 }, {  1,  0 }}
 };
 
-@interface DrawTexture ()
+@interface GPUEDrawTexture ()
 @property (nonatomic, readonly) id<MTLBuffer> quadData;
 @property (nonatomic, readonly) id<MTLSamplerState> sampler;
 @end
 
-@implementation DrawTexture
+@implementation GPUEDrawTexture
 
 @synthesize inTexture=_inTexture;
 
-- (instancetype)initWithLibrary:(id<MTLLibrary>)library texture:(id<MTLTexture>)texture host:(id<GPURenderHost>)host {
+- (instancetype)initWithLibrary:(id<MTLLibrary>)library texture:(id<MTLTexture>)texture host:(id<GPUERenderHost>)host {
     self = [super initWithWithLibrary:library vertexFunction:@"vertexPassThrough" fragmentFunction:@"textureLookup" host:host];
     if (self) {
         MTLResourceOptions options;

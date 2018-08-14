@@ -1,5 +1,5 @@
 //
-//  GPUComputeTask.h
+//  GPUEComputeTask.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.
@@ -10,7 +10,7 @@
 
 #import <simd/simd.h>
 
-#import "GPUTask.h"
+#import "GPUETask.h"
 
 #if TARGET_OS_IPHONE
 #define STORAGE_MODE MTLResourceStorageModeShared
@@ -20,7 +20,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GPUComputeTask : NSObject<GPUTask> {
+@interface GPUEComputeTask : NSObject<GPUETask> {
 @protected
     BOOL _shouldRun;
 }

@@ -1,16 +1,16 @@
 //
-//  BufferToTexture.m
+//  GPUEBufferToTexture.m
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-07-22.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "BufferToTexture.h"
+#import "GPUEBufferToTexture.h"
 
 static id<MTLTexture> Texture(id<MTLDevice>device, vector_uint2 size);
 
-@implementation BufferToTexture
+@implementation GPUEBufferToTexture
 
 @synthesize outTexture=_outTexture;
 @synthesize threadCount=_threadCount;

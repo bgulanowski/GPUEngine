@@ -1,5 +1,5 @@
 //
-//  TexturePresent.h
+//  GPUETexturePresent.h
 //  Noise Lab-Mac
 //
 //  Created by Brent Gulanowski on 2018-06-20.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GPUBlitTask.h"
+#import "GPUEBlitTask.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TexturePresent : GPUBlitTask
+@interface GPUETexturePresent : GPUEBlitTask
 
 - (instancetype)initWithRenderPassDescriptor:(MTLRenderPassDescriptor *)descriptor source:(id<MTLTexture>)source;
 

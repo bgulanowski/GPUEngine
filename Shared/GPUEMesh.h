@@ -1,5 +1,5 @@
 //
-//  Mesh.h
+//  GPUEMesh.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-28.
@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Mesh : NSObject
+@interface GPUEMesh : NSObject
 
 @property (nonatomic) id<MTLBuffer> vertexBuffer;
 @property (nonatomic) id<MTLBuffer> indexBuffer;

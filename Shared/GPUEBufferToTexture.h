@@ -1,16 +1,16 @@
 //
-//  BufferToTexture.h
+//  GPUEBufferToTexture.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-07-22.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "GPUComputeTask.h"
+#import "GPUEComputeTask.h"
 
 #import <simd/simd.h>
 
-@interface BufferToTexture : GPUComputeTask<BufferConsumer, TextureProducer>
+@interface GPUEBufferToTexture : GPUEComputeTask<GPUEBufferConsumer, GPUETextureProducer>
 
 - (instancetype)initWithLibrary:(id<MTLLibrary>)library kernelFunction:(NSString *)kernelName NS_UNAVAILABLE;
 

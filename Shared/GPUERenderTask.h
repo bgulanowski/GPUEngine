@@ -1,5 +1,5 @@
 //
-//  GPURenderTask.h
+//  GPUERenderTask.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.
@@ -8,21 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-#import "GPUTask.h"
+#import "GPUETask.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol GPURenderHost
+@protocol GPUERenderHost
 @property (readonly) MTLPixelFormat pixelFormat;
 @property (readonly) MTLViewport viewport;
 @property (readonly) MTLRenderPassDescriptor *renderPassDescriptor;
 @property (readonly) id<MTLDrawable> drawable;
 @end
 
-@interface GPURenderTask : NSObject<GPUTask>
+@interface GPUERenderTask : NSObject<GPUETask>
 
 - (instancetype)init NS_UNAVAILABLE;
-- (instancetype)initWithWithLibrary:(id<MTLLibrary>)library vertexFunction:(NSString *)vertexName fragmentFunction:(NSString *)fragmentName host:(id<GPURenderHost>)host NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithWithLibrary:(id<MTLLibrary>)library vertexFunction:(NSString *)vertexName fragmentFunction:(NSString *)fragmentName host:(id<GPUERenderHost>)host NS_DESIGNATED_INITIALIZER;
 
 // Subclass responsibilities
 

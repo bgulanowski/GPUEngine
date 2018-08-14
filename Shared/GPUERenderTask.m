@@ -1,23 +1,23 @@
 //
-//  GPURenderTask.m
+//  GPUERenderTask.m
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "GPURenderTask.h"
+#import "GPUERenderTask.h"
 
-@interface GPURenderTask ()
+@interface GPUERenderTask ()
 
 @property (nonatomic, readonly) id<MTLRenderPipelineState> pipeline;
-@property (nonatomic, readonly, weak) id<GPURenderHost> renderHost;
+@property (nonatomic, readonly, weak) id<GPUERenderHost> renderHost;
 
 @end
 
-@implementation GPURenderTask
+@implementation GPUERenderTask
 
-- (instancetype)initWithWithLibrary:(id<MTLLibrary>)library vertexFunction:(NSString *)vertexName fragmentFunction:(NSString *)fragmentName host:(id<GPURenderHost>)host {
+- (instancetype)initWithWithLibrary:(id<MTLLibrary>)library vertexFunction:(NSString *)vertexName fragmentFunction:(NSString *)fragmentName host:(id<GPUERenderHost>)host {
     self = [super init];
     if (self) {
         MTLRenderPipelineDescriptor *rpd = [[MTLRenderPipelineDescriptor alloc] init];

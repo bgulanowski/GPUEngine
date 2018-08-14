@@ -1,14 +1,14 @@
 //
-//  GPUBlitTask.m
+//  GPUEBlitTask.m
 //  Noise Lab-Mac
 //
 //  Created by Brent Gulanowski on 2018-06-20.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
 //
 
-#import "GPUBlitTask.h"
+#import "GPUEBlitTask.h"
 
-@implementation GPUBlitTask
+@implementation GPUEBlitTask
 
 - (instancetype)initWithResource:(id<MTLResource>)resource {
     self = [self init];

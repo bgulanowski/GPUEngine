@@ -9,7 +9,7 @@
 #include <metal_stdlib>
 using namespace metal;
 
-#include "ShaderTypes.h"
+#include "GPUEShaderTypes.h"
 
 typedef struct {
     float4 position [[position]];

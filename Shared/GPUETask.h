@@ -1,5 +1,5 @@
 //
-//  GPUTask.h
+//  GPUETask.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-20.
@@ -12,11 +12,11 @@
 
 @import Metal;
 
-@protocol GPURenderHost;
+@protocol GPUERenderHost;
 
-@protocol GPUTask <NSObject>
+@protocol GPUETask <NSObject>
 
-// Called by GPUEngine
+// Called by GPUEEngine
 - (void)encodeTaskWithCommandBuffer:(id<MTLCommandBuffer>)commandBuffer;
 
 @optional
@@ -25,27 +25,27 @@
 
 @end
 
-@protocol BufferProducer <GPUTask>
+@protocol GPUEBufferProducer <GPUETask>
 @property (nonatomic, readonly) id<MTLBuffer> outBuffer;
 @end
 
-@protocol BufferConsumer <GPUTask>
+@protocol GPUEBufferConsumer <GPUETask>
 - (instancetype)initWithLibrary:(id<MTLLibrary>)library buffer:(id<MTLBuffer>)buffer size:(vector_uint2)size;
 @property (nonatomic, readonly) id<MTLBuffer> inBuffer;
 @end
 
-@protocol BufferMap <BufferProducer, BufferConsumer>
+@protocol GPUEBufferMap <GPUEBufferProducer, GPUEBufferConsumer>
 @end
 
 
-@protocol TextureProducer <GPUTask>
+@protocol GPUETextureProducer <GPUETask>
 @property (nonatomic, readonly) id<MTLTexture> outTexture;
 @end
 
-@protocol TextureConsumer <GPUTask>
-- (instancetype)initWithLibrary:(id<MTLLibrary>)library texture:(id<MTLTexture>)texture host:(id<GPURenderHost>)host;
+@protocol GPUETextureConsumer <GPUETask>
+- (instancetype)initWithLibrary:(id<MTLLibrary>)library texture:(id<MTLTexture>)texture host:(id<GPUERenderHost>)host;
 @property (nonatomic, readonly) id<MTLTexture> inTexture;
 @end
 
-@protocol BufferTransform <BufferConsumer, TextureProducer>
+@protocol GPUEBufferTransform <GPUEBufferConsumer, GPUETextureProducer>
 @end

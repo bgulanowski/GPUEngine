@@ -1,5 +1,5 @@
 //
-//  ShaderTypes.h
+//  GPUEShaderTypes.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-06-15.

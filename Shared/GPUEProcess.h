@@ -1,5 +1,5 @@
 //
-//  GPUProcess.h
+//  GPUEProcess.h
 //  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-07-06.
@@ -10,16 +10,16 @@
 
 @import Metal;
 
-#import "GPUTask.h"
+#import "GPUETask.h"
 
-@protocol GPUTask;
+@protocol GPUETask;
 @class GPUEngine;
 
-@protocol GPUProcess <NSObject>
+@protocol GPUEProcess <NSObject>
 
 @property (nonatomic, readonly) GPUEngine *engine;
 @property (nonatomic, readonly) id<MTLDevice> device;
-@property (nonatomic, readonly) NSArray<id<GPUTask>> *tasks; // provided by subclasses
+@property (nonatomic, readonly) NSArray<id<GPUETask>> *tasks; // provided by subclasses
 @property (nonatomic, readonly) BOOL needsRefresh;
 @property (nonatomic, copy) dispatch_block_t refresh;
 @property (nonatomic, copy) dispatch_block_t onComplete;
@@ -34,10 +34,10 @@
 
 @end
 
-@protocol GPUBufferProducer <GPUProcess>
-@property (nonatomic, readonly) id<BufferProducer> bufferProducer;
+@protocol GPUBufferProducer <GPUEProcess>
+@property (nonatomic, readonly) id<GPUEBufferProducer> bufferProducer;
 @end
 
-@protocol GPUTextureProducer <GPUProcess>
-@property (nonatomic, readonly) id<TextureProducer> textureProducer;
+@protocol GPUTextureProducer <GPUEProcess>
+@property (nonatomic, readonly) id<GPUETextureProducer> textureProducer;
 @end
