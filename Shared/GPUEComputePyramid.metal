@@ -25,7 +25,7 @@ kernel void computePyramid(device float *results [[buffer(0)]],
     bool r = (sx > sy && (period - sx) > sy);
     bool l = (sy > sx && sx > (period - sy));
     
-    float v = (r || l) ? sy : sx;
+    float v = (r || l) ? sx : sy;
     float value = abs((d - 2.0f * v) / d);
     
     results[index] = value;
