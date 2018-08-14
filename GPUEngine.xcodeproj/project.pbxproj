@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FE909F212310D7005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE909D212310D7005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84FE90AE212310F8005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90AC212310F8005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84FE90BD21231155005AF842 /* GPURenderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B321231155005AF842 /* GPURenderTask.m */; };
+		84FE90BE21231155005AF842 /* GPURenderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B321231155005AF842 /* GPURenderTask.m */; };
+		84FE90BF21231155005AF842 /* GPUBlitTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B421231155005AF842 /* GPUBlitTask.m */; };
+		84FE90C021231155005AF842 /* GPUBlitTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B421231155005AF842 /* GPUBlitTask.m */; };
+		84FE90C121231155005AF842 /* GPUEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B521231155005AF842 /* GPUEngine.m */; };
+		84FE90C221231155005AF842 /* GPUEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B521231155005AF842 /* GPUEngine.m */; };
+		84FE90C321231155005AF842 /* GPURenderTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B621231155005AF842 /* GPURenderTask.h */; };
+		84FE90C421231155005AF842 /* GPURenderTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B621231155005AF842 /* GPURenderTask.h */; };
+		84FE90C521231155005AF842 /* GPUComputeTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B721231155005AF842 /* GPUComputeTask.h */; };
+		84FE90C621231155005AF842 /* GPUComputeTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B721231155005AF842 /* GPUComputeTask.h */; };
+		84FE90C721231155005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B821231155005AF842 /* GPUEngine.h */; };
+		84FE90C821231155005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B821231155005AF842 /* GPUEngine.h */; };
+		84FE90C921231155005AF842 /* GPUTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B921231155005AF842 /* GPUTask.h */; };
+		84FE90CA21231155005AF842 /* GPUTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B921231155005AF842 /* GPUTask.h */; };
+		84FE90CB21231155005AF842 /* GPUBlitTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BA21231155005AF842 /* GPUBlitTask.h */; };
+		84FE90CC21231155005AF842 /* GPUBlitTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BA21231155005AF842 /* GPUBlitTask.h */; };
+		84FE90CD21231155005AF842 /* GPUComputeTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90BB21231155005AF842 /* GPUComputeTask.m */; };
+		84FE90CE21231155005AF842 /* GPUComputeTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90BB21231155005AF842 /* GPUComputeTask.m */; };
+		84FE90CF21231155005AF842 /* GPUProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BC21231155005AF842 /* GPUProcess.h */; };
+		84FE90D021231155005AF842 /* GPUProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BC21231155005AF842 /* GPUProcess.h */; };
+		84FE90D6212311A5005AF842 /* CGImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D1212311A4005AF842 /* CGImageUtilities.m */; };
+		84FE90D7212311A5005AF842 /* CGImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D1212311A4005AF842 /* CGImageUtilities.m */; };
+		84FE90D8212311A5005AF842 /* BufferToTexture.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D2212311A5005AF842 /* BufferToTexture.metal */; };
+		84FE90D9212311A5005AF842 /* BufferToTexture.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D2212311A5005AF842 /* BufferToTexture.metal */; };
+		84FE90DA212311A5005AF842 /* BufferToTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D3212311A5005AF842 /* BufferToTexture.m */; };
+		84FE90DB212311A5005AF842 /* BufferToTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D3212311A5005AF842 /* BufferToTexture.m */; };
+		84FE90DC212311A5005AF842 /* BufferToTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D4212311A5005AF842 /* BufferToTexture.h */; };
+		84FE90DD212311A5005AF842 /* BufferToTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D4212311A5005AF842 /* BufferToTexture.h */; };
+		84FE90DE212311A5005AF842 /* CGImageUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D5212311A5005AF842 /* CGImageUtilities.h */; };
+		84FE90DF212311A5005AF842 /* CGImageUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D5212311A5005AF842 /* CGImageUtilities.h */; };
+		84FE90E8212312CC005AF842 /* DrawFlatMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E0212312CA005AF842 /* DrawFlatMesh.h */; };
+		84FE90E9212312CC005AF842 /* DrawFlatMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E0212312CA005AF842 /* DrawFlatMesh.h */; };
+		84FE90EA212312CC005AF842 /* ComputePyramid.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E1212312CB005AF842 /* ComputePyramid.m */; };
+		84FE90EB212312CC005AF842 /* ComputePyramid.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E1212312CB005AF842 /* ComputePyramid.m */; };
+		84FE90EC212312CC005AF842 /* ComputePyramid.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E2212312CB005AF842 /* ComputePyramid.h */; };
+		84FE90ED212312CC005AF842 /* ComputePyramid.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E2212312CB005AF842 /* ComputePyramid.h */; };
+		84FE90EE212312CC005AF842 /* DrawTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E3212312CB005AF842 /* DrawTexture.h */; };
+		84FE90EF212312CC005AF842 /* DrawTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E3212312CB005AF842 /* DrawTexture.h */; };
+		84FE90F0212312CC005AF842 /* DrawTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E4212312CB005AF842 /* DrawTexture.m */; };
+		84FE90F1212312CC005AF842 /* DrawTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E4212312CB005AF842 /* DrawTexture.m */; };
+		84FE90F2212312CC005AF842 /* ComputePyramid.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E5212312CB005AF842 /* ComputePyramid.metal */; };
+		84FE90F3212312CC005AF842 /* ComputePyramid.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E5212312CB005AF842 /* ComputePyramid.metal */; };
+		84FE90F4212312CC005AF842 /* DrawFlatMesh.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E6212312CB005AF842 /* DrawFlatMesh.metal */; };
+		84FE90F5212312CC005AF842 /* DrawFlatMesh.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E6212312CB005AF842 /* DrawFlatMesh.metal */; };
+		84FE90F6212312CC005AF842 /* DrawFlatMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E7212312CB005AF842 /* DrawFlatMesh.m */; };
+		84FE90F7212312CC005AF842 /* DrawFlatMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E7212312CB005AF842 /* DrawFlatMesh.m */; };
+		84FE90FA212312EE005AF842 /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90F8212312EE005AF842 /* Mesh.m */; };
+		84FE90FB212312EE005AF842 /* Mesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90F8212312EE005AF842 /* Mesh.m */; };
+		84FE90FC212312EE005AF842 /* Mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90F9212312EE005AF842 /* Mesh.h */; };
+		84FE90FD212312EE005AF842 /* Mesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90F9212312EE005AF842 /* Mesh.h */; };
+		84FE90FF21231335005AF842 /* ShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90FE21231335005AF842 /* ShaderTypes.h */; };
+		84FE910021231335005AF842 /* ShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90FE21231335005AF842 /* ShaderTypes.h */; };
+		84FE910321231354005AF842 /* TexturePresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE910121231353005AF842 /* TexturePresent.m */; };
+		84FE910421231354005AF842 /* TexturePresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE910121231353005AF842 /* TexturePresent.m */; };
+		84FE910521231354005AF842 /* TexturePresent.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE910221231353005AF842 /* TexturePresent.h */; };
+		84FE910621231354005AF842 /* TexturePresent.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE910221231353005AF842 /* TexturePresent.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84FE909A212310D7005AF842 /* GPUEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FE909D212310D7005AF842 /* GPUEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUEngine.h; sourceTree = "<group>"; };
+		84FE909E212310D7005AF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FE90AA212310F7005AF842 /* GPUEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FE90AC212310F8005AF842 /* GPUEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUEngine.h; sourceTree = "<group>"; };
+		84FE90AD212310F8005AF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FE90B321231155005AF842 /* GPURenderTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPURenderTask.m; sourceTree = "<group>"; };
+		84FE90B421231155005AF842 /* GPUBlitTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUBlitTask.m; sourceTree = "<group>"; };
+		84FE90B521231155005AF842 /* GPUEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUEngine.m; sourceTree = "<group>"; };
+		84FE90B621231155005AF842 /* GPURenderTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPURenderTask.h; sourceTree = "<group>"; };
+		84FE90B721231155005AF842 /* GPUComputeTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUComputeTask.h; sourceTree = "<group>"; };
+		84FE90B821231155005AF842 /* GPUEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUEngine.h; sourceTree = "<group>"; };
+		84FE90B921231155005AF842 /* GPUTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUTask.h; sourceTree = "<group>"; };
+		84FE90BA21231155005AF842 /* GPUBlitTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUBlitTask.h; sourceTree = "<group>"; };
+		84FE90BB21231155005AF842 /* GPUComputeTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUComputeTask.m; sourceTree = "<group>"; };
+		84FE90BC21231155005AF842 /* GPUProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUProcess.h; sourceTree = "<group>"; };
+		84FE90D1212311A4005AF842 /* CGImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageUtilities.m; sourceTree = "<group>"; };
+		84FE90D2212311A5005AF842 /* BufferToTexture.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = BufferToTexture.metal; sourceTree = "<group>"; };
+		84FE90D3212311A5005AF842 /* BufferToTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BufferToTexture.m; sourceTree = "<group>"; };
+		84FE90D4212311A5005AF842 /* BufferToTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BufferToTexture.h; sourceTree = "<group>"; };
+		84FE90D5212311A5005AF842 /* CGImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageUtilities.h; sourceTree = "<group>"; };
+		84FE90E0212312CA005AF842 /* DrawFlatMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawFlatMesh.h; sourceTree = "<group>"; };
+		84FE90E1212312CB005AF842 /* ComputePyramid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputePyramid.m; sourceTree = "<group>"; };
+		84FE90E2212312CB005AF842 /* ComputePyramid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputePyramid.h; sourceTree = "<group>"; };
+		84FE90E3212312CB005AF842 /* DrawTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTexture.h; sourceTree = "<group>"; };
+		84FE90E4212312CB005AF842 /* DrawTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTexture.m; sourceTree = "<group>"; };
+		84FE90E5212312CB005AF842 /* ComputePyramid.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = ComputePyramid.metal; sourceTree = "<group>"; };
+		84FE90E6212312CB005AF842 /* DrawFlatMesh.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = DrawFlatMesh.metal; sourceTree = "<group>"; };
+		84FE90E7212312CB005AF842 /* DrawFlatMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawFlatMesh.m; sourceTree = "<group>"; };
+		84FE90F8212312EE005AF842 /* Mesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesh.m; sourceTree = "<group>"; };
+		84FE90F9212312EE005AF842 /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		84FE90FE21231335005AF842 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		84FE910121231353005AF842 /* TexturePresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TexturePresent.m; sourceTree = "<group>"; };
+		84FE910221231353005AF842 /* TexturePresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexturePresent.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FE9096212310D7005AF842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FE90A6212310F7005AF842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FE9090212310D7005AF842 = {
+			isa = PBXGroup;
+			children = (
+				84FE90B22123113A005AF842 /* Shared */,
+				84FE909C212310D7005AF842 /* GPUEngine-iOS */,
+				84FE90AB212310F8005AF842 /* GPUEngine-Mac */,
+				84FE909B212310D7005AF842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FE909B212310D7005AF842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FE909A212310D7005AF842 /* GPUEngine.framework */,
+				84FE90AA212310F7005AF842 /* GPUEngine.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FE909C212310D7005AF842 /* GPUEngine-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				84FE909D212310D7005AF842 /* GPUEngine.h */,
+				84FE909E212310D7005AF842 /* Info.plist */,
+			);
+			path = "GPUEngine-iOS";
+			sourceTree = "<group>";
+		};
+		84FE90AB212310F8005AF842 /* GPUEngine-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				84FE90AC212310F8005AF842 /* GPUEngine.h */,
+				84FE90AD212310F8005AF842 /* Info.plist */,
+			);
+			path = "GPUEngine-Mac";
+			sourceTree = "<group>";
+		};
+		84FE90B22123113A005AF842 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				84FE90D4212311A5005AF842 /* BufferToTexture.h */,
+				84FE90D3212311A5005AF842 /* BufferToTexture.m */,
+				84FE90D2212311A5005AF842 /* BufferToTexture.metal */,
+				84FE90D5212311A5005AF842 /* CGImageUtilities.h */,
+				84FE90D1212311A4005AF842 /* CGImageUtilities.m */,
+				84FE90E2212312CB005AF842 /* ComputePyramid.h */,
+				84FE90E1212312CB005AF842 /* ComputePyramid.m */,
+				84FE90E5212312CB005AF842 /* ComputePyramid.metal */,
+				84FE90E0212312CA005AF842 /* DrawFlatMesh.h */,
+				84FE90E7212312CB005AF842 /* DrawFlatMesh.m */,
+				84FE90E6212312CB005AF842 /* DrawFlatMesh.metal */,
+				84FE90E3212312CB005AF842 /* DrawTexture.h */,
+				84FE90E4212312CB005AF842 /* DrawTexture.m */,
+				84FE90BA21231155005AF842 /* GPUBlitTask.h */,
+				84FE90B421231155005AF842 /* GPUBlitTask.m */,
+				84FE90B721231155005AF842 /* GPUComputeTask.h */,
+				84FE90BB21231155005AF842 /* GPUComputeTask.m */,
+				84FE90B821231155005AF842 /* GPUEngine.h */,
+				84FE90B521231155005AF842 /* GPUEngine.m */,
+				84FE90BC21231155005AF842 /* GPUProcess.h */,
+				84FE90B621231155005AF842 /* GPURenderTask.h */,
+				84FE90B321231155005AF842 /* GPURenderTask.m */,
+				84FE90B921231155005AF842 /* GPUTask.h */,
+				84FE90F9212312EE005AF842 /* Mesh.h */,
+				84FE90F8212312EE005AF842 /* Mesh.m */,
+				84FE90FE21231335005AF842 /* ShaderTypes.h */,
+				84FE910221231353005AF842 /* TexturePresent.h */,
+				84FE910121231353005AF842 /* TexturePresent.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		84FE9097212310D7005AF842 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FE90FC212312EE005AF842 /* Mesh.h in Headers */,
+				84FE90C321231155005AF842 /* GPURenderTask.h in Headers */,
+				84FE90DE212311A5005AF842 /* CGImageUtilities.h in Headers */,
+				84FE90EE212312CC005AF842 /* DrawTexture.h in Headers */,
+				84FE90C921231155005AF842 /* GPUTask.h in Headers */,
+				84FE910521231354005AF842 /* TexturePresent.h in Headers */,
+				84FE90C521231155005AF842 /* GPUComputeTask.h in Headers */,
+				84FE90CF21231155005AF842 /* GPUProcess.h in Headers */,
+				84FE90CB21231155005AF842 /* GPUBlitTask.h in Headers */,
+				84FE90DC212311A5005AF842 /* BufferToTexture.h in Headers */,
+				84FE909F212310D7005AF842 /* GPUEngine.h in Headers */,
+				84FE90EC212312CC005AF842 /* ComputePyramid.h in Headers */,
+				84FE90E8212312CC005AF842 /* DrawFlatMesh.h in Headers */,
+				84FE90C721231155005AF842 /* GPUEngine.h in Headers */,
+				84FE90FF21231335005AF842 /* ShaderTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FE90A7212310F7005AF842 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FE90FD212312EE005AF842 /* Mesh.h in Headers */,
+				84FE90C421231155005AF842 /* GPURenderTask.h in Headers */,
+				84FE90DF212311A5005AF842 /* CGImageUtilities.h in Headers */,
+				84FE90EF212312CC005AF842 /* DrawTexture.h in Headers */,
+				84FE90CA21231155005AF842 /* GPUTask.h in Headers */,
+				84FE910621231354005AF842 /* TexturePresent.h in Headers */,
+				84FE90C621231155005AF842 /* GPUComputeTask.h in Headers */,
+				84FE90D021231155005AF842 /* GPUProcess.h in Headers */,
+				84FE90CC21231155005AF842 /* GPUBlitTask.h in Headers */,
+				84FE90DD212311A5005AF842 /* BufferToTexture.h in Headers */,
+				84FE90AE212310F8005AF842 /* GPUEngine.h in Headers */,
+				84FE90ED212312CC005AF842 /* ComputePyramid.h in Headers */,
+				84FE90E9212312CC005AF842 /* DrawFlatMesh.h in Headers */,
+				84FE90C821231155005AF842 /* GPUEngine.h in Headers */,
+				84FE910021231335005AF842 /* ShaderTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84FE9099212310D7005AF842 /* GPUEngine-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FE90A2212310D7005AF842 /* Build configuration list for PBXNativeTarget "GPUEngine-iOS" */;
+			buildPhases = (
+				84FE9095212310D7005AF842 /* Sources */,
+				84FE9096212310D7005AF842 /* Frameworks */,
+				84FE9097212310D7005AF842 /* Headers */,
+				84FE9098212310D7005AF842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPUEngine-iOS";
+			productName = GPUEngine;
+			productReference = 84FE909A212310D7005AF842 /* GPUEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		84FE90A9212310F7005AF842 /* GPUEngine-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FE90AF212310F8005AF842 /* Build configuration list for PBXNativeTarget "GPUEngine-Mac" */;
+			buildPhases = (
+				84FE90A5212310F7005AF842 /* Sources */,
+				84FE90A6212310F7005AF842 /* Frameworks */,
+				84FE90A7212310F7005AF842 /* Headers */,
+				84FE90A8212310F7005AF842 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GPUEngine-Mac";
+			productName = GPUEngine;
+			productReference = 84FE90AA212310F7005AF842 /* GPUEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FE9091212310D7005AF842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Lichen Labs";
+				TargetAttributes = {
+					84FE9099212310D7005AF842 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					84FE90A9212310F7005AF842 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 84FE9094212310D7005AF842 /* Build configuration list for PBXProject "GPUEngine" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84FE9090212310D7005AF842;
+			productRefGroup = 84FE909B212310D7005AF842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FE9099212310D7005AF842 /* GPUEngine-iOS */,
+				84FE90A9212310F7005AF842 /* GPUEngine-Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FE9098212310D7005AF842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FE90A8212310F7005AF842 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FE9095212310D7005AF842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FE90FA212312EE005AF842 /* Mesh.m in Sources */,
+				84FE910321231354005AF842 /* TexturePresent.m in Sources */,
+				84FE90DA212311A5005AF842 /* BufferToTexture.m in Sources */,
+				84FE90BF21231155005AF842 /* GPUBlitTask.m in Sources */,
+				84FE90C121231155005AF842 /* GPUEngine.m in Sources */,
+				84FE90F6212312CC005AF842 /* DrawFlatMesh.m in Sources */,
+				84FE90D6212311A5005AF842 /* CGImageUtilities.m in Sources */,
+				84FE90F4212312CC005AF842 /* DrawFlatMesh.metal in Sources */,
+				84FE90BD21231155005AF842 /* GPURenderTask.m in Sources */,
+				84FE90F0212312CC005AF842 /* DrawTexture.m in Sources */,
+				84FE90D8212311A5005AF842 /* BufferToTexture.metal in Sources */,
+				84FE90EA212312CC005AF842 /* ComputePyramid.m in Sources */,
+				84FE90F2212312CC005AF842 /* ComputePyramid.metal in Sources */,
+				84FE90CD21231155005AF842 /* GPUComputeTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FE90A5212310F7005AF842 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FE90FB212312EE005AF842 /* Mesh.m in Sources */,
+				84FE910421231354005AF842 /* TexturePresent.m in Sources */,
+				84FE90DB212311A5005AF842 /* BufferToTexture.m in Sources */,
+				84FE90C021231155005AF842 /* GPUBlitTask.m in Sources */,
+				84FE90C221231155005AF842 /* GPUEngine.m in Sources */,
+				84FE90F7212312CC005AF842 /* DrawFlatMesh.m in Sources */,
+				84FE90D7212311A5005AF842 /* CGImageUtilities.m in Sources */,
+				84FE90F5212312CC005AF842 /* DrawFlatMesh.metal in Sources */,
+				84FE90BE21231155005AF842 /* GPURenderTask.m in Sources */,
+				84FE90F1212312CC005AF842 /* DrawTexture.m in Sources */,
+				84FE90D9212311A5005AF842 /* BufferToTexture.metal in Sources */,
+				84FE90EB212312CC005AF842 /* ComputePyramid.m in Sources */,
+				84FE90F3212312CC005AF842 /* ComputePyramid.metal in Sources */,
+				84FE90CE21231155005AF842 /* GPUComputeTask.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		84FE90A0212310D7005AF842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84FE90A1212310D7005AF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84FE90A3212310D7005AF842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GPUEngine-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LichenLabs.GPUEngine;
+				PRODUCT_NAME = GPUEngine;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84FE90A4212310D7005AF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "GPUEngine-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LichenLabs.GPUEngine;
+				PRODUCT_NAME = GPUEngine;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84FE90B0212310F8005AF842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "GPUEngine-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LichenLabs.GPUEngine;
+				PRODUCT_NAME = GPUEngine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84FE90B1212310F8005AF842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "GPUEngine-Mac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LichenLabs.GPUEngine;
+				PRODUCT_NAME = GPUEngine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FE9094212310D7005AF842 /* Build configuration list for PBXProject "GPUEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FE90A0212310D7005AF842 /* Debug */,
+				84FE90A1212310D7005AF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FE90A2212310D7005AF842 /* Build configuration list for PBXNativeTarget "GPUEngine-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FE90A3212310D7005AF842 /* Debug */,
+				84FE90A4212310D7005AF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FE90AF212310F8005AF842 /* Build configuration list for PBXNativeTarget "GPUEngine-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FE90B0212310F8005AF842 /* Debug */,
+				84FE90B1212310F8005AF842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FE9091212310D7005AF842 /* Project object */;
+}
