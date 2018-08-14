@@ -10,7 +10,7 @@
 
 #import <simd/simd.h>
 
-@interface GPUEBufferToTexture : GPUEComputeTask<GPUEBufferConsumer, GPUETextureProducer>
+@interface GPUEBufferToTexture : GPUEComputeTask<GPUEBufferTransform>
 
 - (instancetype)initWithLibrary:(id<MTLLibrary>)library kernelFunction:(NSString *)kernelName NS_UNAVAILABLE;
 
