@@ -15,27 +15,28 @@ FOUNDATION_EXPORT double GPUEngineVersionNumber;
 FOUNDATION_EXPORT const unsigned char GPUEngineVersionString[];
 
 // Core
-#import <GPUEngine/GPUEEngine.h>
-#import <GPUEngine/GPUETask.h>
-#import <GPUEngine/GPUEProcess.h>
+#import "GPUEEngine.h"
+#import "GPUETask.h"
+#import "GPUEProcess.h"
 
 // Task Types
-#import <GPUEngine/GPUEBlitTask.h>
-#import <GPUEngine/GPUEComputeTask.h>
-#import <GPUEngine/GPUERenderTask.h>
+#import "GPUEBlitTask.h"
+#import "GPUEComputeTask.h"
+#import "GPUERenderTask.h"
 
 // Generic Tasks
-#import <GPUEngine/GPUEBufferToTexture.h>
-#import <GPUEngine/GPUEDrawFlatMesh.h>
-#import <GPUEngine/GPUEDrawTexture.h>
-#import <GPUEngine/GPUETexturePresent.h>
+#import "GPUEBufferToTexture.h"
+#import "GPUEDrawFlatMesh.h"
+#import "GPUEDrawTexture.h"
+#import "GPUETexturePresent.h"
 
 // Sample Tasks
-#import <GPUEngine/GPUEComputePyramid.h>
+#import "GPUEComputePyramid.h"
 
 // Data Types
-#import <GPUEngine/GPUEMesh.h>
-#import <GPUEngine/GPUEShaderTypes.h>
+#import "GPUEMesh.h"
+#import "GPUEShaderTypes.h"
 
 // Utilities
-#import <GPUEngine/GPUECGImageUtilities.h>
+#import "GPUECGImageUtilities.h"
+#import "GPUERenderer.h"

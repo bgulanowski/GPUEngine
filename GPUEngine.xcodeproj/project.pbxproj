@@ -15,19 +15,19 @@
 		84FE90C021231155005AF842 /* GPUEBlitTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B421231155005AF842 /* GPUEBlitTask.m */; };
 		84FE90C121231155005AF842 /* GPUEEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B521231155005AF842 /* GPUEEngine.m */; };
 		84FE90C221231155005AF842 /* GPUEEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B521231155005AF842 /* GPUEEngine.m */; };
-		84FE90C321231155005AF842 /* GPUERenderTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B621231155005AF842 /* GPUERenderTask.h */; };
+		84FE90C321231155005AF842 /* GPUERenderTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B621231155005AF842 /* GPUERenderTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90C421231155005AF842 /* GPUERenderTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B621231155005AF842 /* GPUERenderTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90C521231155005AF842 /* GPUEComputeTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B721231155005AF842 /* GPUEComputeTask.h */; };
+		84FE90C521231155005AF842 /* GPUEComputeTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B721231155005AF842 /* GPUEComputeTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90C621231155005AF842 /* GPUEComputeTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B721231155005AF842 /* GPUEComputeTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90C721231155005AF842 /* GPUEEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B821231155005AF842 /* GPUEEngine.h */; };
+		84FE90C721231155005AF842 /* GPUEEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B821231155005AF842 /* GPUEEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90C821231155005AF842 /* GPUEEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B821231155005AF842 /* GPUEEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90C921231155005AF842 /* GPUETask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B921231155005AF842 /* GPUETask.h */; };
+		84FE90C921231155005AF842 /* GPUETask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B921231155005AF842 /* GPUETask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90CA21231155005AF842 /* GPUETask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90B921231155005AF842 /* GPUETask.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90CB21231155005AF842 /* GPUEBlitTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BA21231155005AF842 /* GPUEBlitTask.h */; };
+		84FE90CB21231155005AF842 /* GPUEBlitTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BA21231155005AF842 /* GPUEBlitTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90CC21231155005AF842 /* GPUEBlitTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BA21231155005AF842 /* GPUEBlitTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90CD21231155005AF842 /* GPUEComputeTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90BB21231155005AF842 /* GPUEComputeTask.m */; };
 		84FE90CE21231155005AF842 /* GPUEComputeTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90BB21231155005AF842 /* GPUEComputeTask.m */; };
-		84FE90CF21231155005AF842 /* GPUEProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BC21231155005AF842 /* GPUEProcess.h */; };
+		84FE90CF21231155005AF842 /* GPUEProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BC21231155005AF842 /* GPUEProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90D021231155005AF842 /* GPUEProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90BC21231155005AF842 /* GPUEProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90D6212311A5005AF842 /* GPUECGImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D1212311A4005AF842 /* GPUECGImageUtilities.m */; };
 		84FE90D7212311A5005AF842 /* GPUECGImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D1212311A4005AF842 /* GPUECGImageUtilities.m */; };
@@ -35,17 +35,17 @@
 		84FE90D9212311A5005AF842 /* GPUEBufferToTexture.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D2212311A5005AF842 /* GPUEBufferToTexture.metal */; };
 		84FE90DA212311A5005AF842 /* GPUEBufferToTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D3212311A5005AF842 /* GPUEBufferToTexture.m */; };
 		84FE90DB212311A5005AF842 /* GPUEBufferToTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90D3212311A5005AF842 /* GPUEBufferToTexture.m */; };
-		84FE90DC212311A5005AF842 /* GPUEBufferToTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D4212311A5005AF842 /* GPUEBufferToTexture.h */; };
+		84FE90DC212311A5005AF842 /* GPUEBufferToTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D4212311A5005AF842 /* GPUEBufferToTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90DD212311A5005AF842 /* GPUEBufferToTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D4212311A5005AF842 /* GPUEBufferToTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90DE212311A5005AF842 /* GPUECGImageUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D5212311A5005AF842 /* GPUECGImageUtilities.h */; };
+		84FE90DE212311A5005AF842 /* GPUECGImageUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D5212311A5005AF842 /* GPUECGImageUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90DF212311A5005AF842 /* GPUECGImageUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90D5212311A5005AF842 /* GPUECGImageUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90E8212312CC005AF842 /* GPUEDrawFlatMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E0212312CA005AF842 /* GPUEDrawFlatMesh.h */; };
+		84FE90E8212312CC005AF842 /* GPUEDrawFlatMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E0212312CA005AF842 /* GPUEDrawFlatMesh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90E9212312CC005AF842 /* GPUEDrawFlatMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E0212312CA005AF842 /* GPUEDrawFlatMesh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90EA212312CC005AF842 /* GPUEComputePyramid.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E1212312CB005AF842 /* GPUEComputePyramid.m */; };
 		84FE90EB212312CC005AF842 /* GPUEComputePyramid.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E1212312CB005AF842 /* GPUEComputePyramid.m */; };
-		84FE90EC212312CC005AF842 /* GPUEComputePyramid.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E2212312CB005AF842 /* GPUEComputePyramid.h */; };
+		84FE90EC212312CC005AF842 /* GPUEComputePyramid.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E2212312CB005AF842 /* GPUEComputePyramid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90ED212312CC005AF842 /* GPUEComputePyramid.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E2212312CB005AF842 /* GPUEComputePyramid.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90EE212312CC005AF842 /* GPUEDrawTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E3212312CB005AF842 /* GPUEDrawTexture.h */; };
+		84FE90EE212312CC005AF842 /* GPUEDrawTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E3212312CB005AF842 /* GPUEDrawTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90EF212312CC005AF842 /* GPUEDrawTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90E3212312CB005AF842 /* GPUEDrawTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90F0212312CC005AF842 /* GPUEDrawTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E4212312CB005AF842 /* GPUEDrawTexture.m */; };
 		84FE90F1212312CC005AF842 /* GPUEDrawTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E4212312CB005AF842 /* GPUEDrawTexture.m */; };
@@ -57,13 +57,13 @@
 		84FE90F7212312CC005AF842 /* GPUEDrawFlatMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90E7212312CB005AF842 /* GPUEDrawFlatMesh.m */; };
 		84FE90FA212312EE005AF842 /* GPUEMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90F8212312EE005AF842 /* GPUEMesh.m */; };
 		84FE90FB212312EE005AF842 /* GPUEMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90F8212312EE005AF842 /* GPUEMesh.m */; };
-		84FE90FC212312EE005AF842 /* GPUEMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90F9212312EE005AF842 /* GPUEMesh.h */; };
+		84FE90FC212312EE005AF842 /* GPUEMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90F9212312EE005AF842 /* GPUEMesh.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90FD212312EE005AF842 /* GPUEMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90F9212312EE005AF842 /* GPUEMesh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84FE90FF21231335005AF842 /* GPUEShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90FE21231335005AF842 /* GPUEShaderTypes.h */; };
+		84FE90FF21231335005AF842 /* GPUEShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90FE21231335005AF842 /* GPUEShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE910021231335005AF842 /* GPUEShaderTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90FE21231335005AF842 /* GPUEShaderTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE910321231354005AF842 /* GPUETexturePresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE910121231353005AF842 /* GPUETexturePresent.m */; };
 		84FE910421231354005AF842 /* GPUETexturePresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE910121231353005AF842 /* GPUETexturePresent.m */; };
-		84FE910521231354005AF842 /* GPUETexturePresent.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE910221231353005AF842 /* GPUETexturePresent.h */; };
+		84FE910521231354005AF842 /* GPUETexturePresent.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE910221231353005AF842 /* GPUETexturePresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE910621231354005AF842 /* GPUETexturePresent.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE910221231353005AF842 /* GPUETexturePresent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE910F21231472005AF842 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE910E21231472005AF842 /* AppDelegate.m */; };
 		84FE911121231473005AF842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FE911021231473005AF842 /* Assets.xcassets */; };
@@ -72,6 +72,10 @@
 		84FE911E212314CE005AF842 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE911D212314CE005AF842 /* MetalKit.framework */; };
 		84FE9120212314D5005AF842 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE911F212314D5005AF842 /* Metal.framework */; };
 		84FE9121212315C5005AF842 /* GPUEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE90AA212310F7005AF842 /* GPUEngine.framework */; };
+		84FE9127212326EC005AF842 /* GPUERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9125212326EC005AF842 /* GPUERenderer.m */; };
+		84FE9128212326EC005AF842 /* GPUERenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE9125212326EC005AF842 /* GPUERenderer.m */; };
+		84FE9129212326EC005AF842 /* GPUERenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE9126212326EC005AF842 /* GPUERenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84FE912A212326EC005AF842 /* GPUERenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE9126212326EC005AF842 /* GPUERenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +123,8 @@
 		84FE911821231473005AF842 /* GPU_Demo_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GPU_Demo_Mac.entitlements; sourceTree = "<group>"; };
 		84FE911D212314CE005AF842 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
 		84FE911F212314D5005AF842 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
+		84FE9125212326EC005AF842 /* GPUERenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUERenderer.m; sourceTree = "<group>"; };
+		84FE9126212326EC005AF842 /* GPUERenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUERenderer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +226,8 @@
 				84FE90B921231155005AF842 /* GPUETask.h */,
 				84FE910221231353005AF842 /* GPUETexturePresent.h */,
 				84FE910121231353005AF842 /* GPUETexturePresent.m */,
+				84FE9126212326EC005AF842 /* GPUERenderer.h */,
+				84FE9125212326EC005AF842 /* GPUERenderer.m */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -264,11 +272,12 @@
 				84FE90CF21231155005AF842 /* GPUEProcess.h in Headers */,
 				84FE90CB21231155005AF842 /* GPUEBlitTask.h in Headers */,
 				84FE90DC212311A5005AF842 /* GPUEBufferToTexture.h in Headers */,
-				84FE909F212310D7005AF842 /* GPUEngine.h in Headers */,
 				84FE90EC212312CC005AF842 /* GPUEComputePyramid.h in Headers */,
 				84FE90E8212312CC005AF842 /* GPUEDrawFlatMesh.h in Headers */,
 				84FE90C721231155005AF842 /* GPUEEngine.h in Headers */,
 				84FE90FF21231335005AF842 /* GPUEShaderTypes.h in Headers */,
+				84FE9129212326EC005AF842 /* GPUERenderer.h in Headers */,
+				84FE909F212310D7005AF842 /* GPUEngine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +292,7 @@
 				84FE90CA21231155005AF842 /* GPUETask.h in Headers */,
 				84FE910621231354005AF842 /* GPUETexturePresent.h in Headers */,
 				84FE90C621231155005AF842 /* GPUEComputeTask.h in Headers */,
+				84FE912A212326EC005AF842 /* GPUERenderer.h in Headers */,
 				84FE90D021231155005AF842 /* GPUEProcess.h in Headers */,
 				84FE90CC21231155005AF842 /* GPUEBlitTask.h in Headers */,
 				84FE90DD212311A5005AF842 /* GPUEBufferToTexture.h in Headers */,
@@ -429,6 +439,7 @@
 				84FE90F6212312CC005AF842 /* GPUEDrawFlatMesh.m in Sources */,
 				84FE90D6212311A5005AF842 /* GPUECGImageUtilities.m in Sources */,
 				84FE90F4212312CC005AF842 /* GPUEDrawFlatMesh.metal in Sources */,
+				84FE9127212326EC005AF842 /* GPUERenderer.m in Sources */,
 				84FE90BD21231155005AF842 /* GPUERenderTask.m in Sources */,
 				84FE90F0212312CC005AF842 /* GPUEDrawTexture.m in Sources */,
 				84FE90D8212311A5005AF842 /* GPUEBufferToTexture.metal in Sources */,
@@ -450,6 +461,7 @@
 				84FE90F7212312CC005AF842 /* GPUEDrawFlatMesh.m in Sources */,
 				84FE90D7212311A5005AF842 /* GPUECGImageUtilities.m in Sources */,
 				84FE90F5212312CC005AF842 /* GPUEDrawFlatMesh.metal in Sources */,
+				84FE9128212326EC005AF842 /* GPUERenderer.m in Sources */,
 				84FE90BE21231155005AF842 /* GPUERenderTask.m in Sources */,
 				84FE90F1212312CC005AF842 /* GPUEDrawTexture.m in Sources */,
 				84FE90D9212311A5005AF842 /* GPUEBufferToTexture.metal in Sources */,
