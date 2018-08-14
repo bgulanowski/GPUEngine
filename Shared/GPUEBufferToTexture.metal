@@ -9,7 +9,7 @@
 #include <metal_stdlib>
 using namespace metal;
 
-kernel void bufferToTexture(constant float *buffer [[buffer(0)]],
+kernel void bufferToTexture(device float *buffer [[buffer(0)]],
                             texture2d<float, access::write> texture [[texture(0)]],
                             uint2 size [[threads_per_grid]],
                             uint2 gid [[thread_position_in_grid]]) {
