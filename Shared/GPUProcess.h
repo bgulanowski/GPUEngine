@@ -1,6 +1,6 @@
 //
 //  GPUProcess.h
-//  NoiseLab
+//  GPUEngine
 //
 //  Created by Brent Gulanowski on 2018-07-06.
 //  Copyright © 2018 Lichen Labs. All rights reserved.
