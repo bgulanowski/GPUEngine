@@ -12,6 +12,18 @@
 		84383B6C21234D390034A6AC /* NSImage+Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 84383B6A21234D390034A6AC /* NSImage+Bitmap.m */; };
 		84383B6F21234D8E0034A6AC /* UIImage+Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 84383B6D21234D8D0034A6AC /* UIImage+Bitmap.m */; };
 		84383B7021234D8E0034A6AC /* UIImage+Bitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 84383B6E21234D8D0034A6AC /* UIImage+Bitmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84383B78212354A50034A6AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383B77212354A50034A6AC /* AppDelegate.swift */; };
+		84383B7A212354A50034A6AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383B79212354A50034A6AC /* ViewController.swift */; };
+		84383B7D212354A50034A6AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84383B7B212354A50034A6AC /* Main.storyboard */; };
+		84383B7F212354A60034A6AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84383B7E212354A60034A6AC /* Assets.xcassets */; };
+		84383B82212354A60034A6AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84383B80212354A60034A6AC /* LaunchScreen.storyboard */; };
+		84383B8C212355210034A6AC /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84383B8B212355210034A6AC /* MetalKit.framework */; };
+		84383B8E212355250034A6AC /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84383B8D212355250034A6AC /* Metal.framework */; };
+		84383B90212355A60034A6AC /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84383B8F212355A60034A6AC /* Process.swift */; };
+		84383B98212378710034A6AC /* GPUEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE909A212310D7005AF842 /* GPUEngine.framework */; };
+		84383B99212378710034A6AC /* GPUEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE909A212310D7005AF842 /* GPUEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84383B9D212379240034A6AC /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84383B8D212355250034A6AC /* Metal.framework */; };
+		84383B9E212379240034A6AC /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84383B8B212355210034A6AC /* MetalKit.framework */; };
 		84FE909F212310D7005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE909D212310D7005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90AE212310F8005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90AC212310F8005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90BD21231155005AF842 /* GPUERenderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B321231155005AF842 /* GPUERenderTask.m */; };
@@ -83,6 +95,30 @@
 		84FE912A212326EC005AF842 /* GPUERenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE9126212326EC005AF842 /* GPUERenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		84383B9A212378710034A6AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84FE9091212310D7005AF842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FE9099212310D7005AF842;
+			remoteInfo = "GPUEngine-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84383B9C212378710034A6AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84383B99212378710034A6AC /* GPUEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		84383B6221232A8C0034A6AC /* Process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Process.h; sourceTree = "<group>"; };
 		84383B6321232A8C0034A6AC /* Process.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Process.m; sourceTree = "<group>"; };
@@ -91,6 +127,17 @@
 		84383B6A21234D390034A6AC /* NSImage+Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Bitmap.m"; sourceTree = "<group>"; };
 		84383B6D21234D8D0034A6AC /* UIImage+Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bitmap.m"; sourceTree = "<group>"; };
 		84383B6E21234D8D0034A6AC /* UIImage+Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bitmap.h"; sourceTree = "<group>"; };
+		84383B75212354A40034A6AC /* GPUE Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPUE Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84383B77212354A50034A6AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84383B79212354A50034A6AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84383B7C212354A50034A6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84383B7E212354A60034A6AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84383B81212354A60034A6AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84383B83212354A60034A6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84383B8B212355210034A6AC /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		84383B8D212355250034A6AC /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		84383B8F212355A60034A6AC /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
+		84383B94212377D90034A6AC /* GPU Demo iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPU Demo iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		84FE909A212310D7005AF842 /* GPUEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FE909D212310D7005AF842 /* GPUEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUEngine.h; sourceTree = "<group>"; };
 		84FE909E212310D7005AF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,10 +187,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84383B72212354A40034A6AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84383B8E212355250034A6AC /* Metal.framework in Frameworks */,
+				84383B8C212355210034A6AC /* MetalKit.framework in Frameworks */,
+				84383B98212378710034A6AC /* GPUEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84FE9096212310D7005AF842 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84383B9D212379240034A6AC /* Metal.framework in Frameworks */,
+				84383B9E212379240034A6AC /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +226,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84383B76212354A50034A6AC /* GPU Demo iOS */ = {
+			isa = PBXGroup;
+			children = (
+				84383B94212377D90034A6AC /* GPU Demo iOS-Bridging-Header.h */,
+				84383B77212354A50034A6AC /* AppDelegate.swift */,
+				84383B79212354A50034A6AC /* ViewController.swift */,
+				84383B7B212354A50034A6AC /* Main.storyboard */,
+				84383B7E212354A60034A6AC /* Assets.xcassets */,
+				84383B80212354A60034A6AC /* LaunchScreen.storyboard */,
+				84383B83212354A60034A6AC /* Info.plist */,
+				84383B8F212355A60034A6AC /* Process.swift */,
+			);
+			path = "GPU Demo iOS";
+			sourceTree = "<group>";
+		};
 		84FE9090212310D7005AF842 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +249,7 @@
 				84FE909C212310D7005AF842 /* GPUEngine-iOS */,
 				84FE90AB212310F8005AF842 /* GPUEngine-Mac */,
 				84FE910C21231472005AF842 /* GPU Demo Mac */,
+				84383B76212354A50034A6AC /* GPU Demo iOS */,
 				84FE909B212310D7005AF842 /* Products */,
 				84FE911C212314CD005AF842 /* Frameworks */,
 			);
@@ -186,6 +261,7 @@
 				84FE909A212310D7005AF842 /* GPUEngine.framework */,
 				84FE90AA212310F7005AF842 /* GPUEngine.framework */,
 				84FE910B21231472005AF842 /* GPU Engine Demo.app */,
+				84383B75212354A40034A6AC /* GPUE Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -268,6 +344,8 @@
 		84FE911C212314CD005AF842 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84383B8D212355250034A6AC /* Metal.framework */,
+				84383B8B212355210034A6AC /* MetalKit.framework */,
 				84FE911F212314D5005AF842 /* Metal.framework */,
 				84FE911D212314CE005AF842 /* MetalKit.framework */,
 			);
@@ -328,6 +406,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		84383B74212354A40034A6AC /* GPU Demo iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84383B84212354A60034A6AC /* Build configuration list for PBXNativeTarget "GPU Demo iOS" */;
+			buildPhases = (
+				84383B71212354A40034A6AC /* Sources */,
+				84383B72212354A40034A6AC /* Frameworks */,
+				84383B73212354A40034A6AC /* Resources */,
+				84383B9C212378710034A6AC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84383B9B212378710034A6AC /* PBXTargetDependency */,
+			);
+			name = "GPU Demo iOS";
+			productName = "GPU Demo iOS";
+			productReference = 84383B75212354A40034A6AC /* GPUE Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		84FE9099212310D7005AF842 /* GPUEngine-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84FE90A2212310D7005AF842 /* Build configuration list for PBXNativeTarget "GPUEngine-iOS" */;
@@ -387,9 +484,14 @@
 		84FE9091212310D7005AF842 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Lichen Labs";
 				TargetAttributes = {
+					84383B74212354A40034A6AC = {
+						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
+					};
 					84FE9099212310D7005AF842 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -417,11 +519,22 @@
 				84FE9099212310D7005AF842 /* GPUEngine-iOS */,
 				84FE90A9212310F7005AF842 /* GPUEngine-Mac */,
 				84FE910A21231472005AF842 /* GPU Demo Mac */,
+				84383B74212354A40034A6AC /* GPU Demo iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84383B73212354A40034A6AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84383B82212354A60034A6AC /* LaunchScreen.storyboard in Resources */,
+				84383B7F212354A60034A6AC /* Assets.xcassets in Resources */,
+				84383B7D212354A50034A6AC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84FE9098212310D7005AF842 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +561,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84383B71212354A40034A6AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84383B7A212354A50034A6AC /* ViewController.swift in Sources */,
+				84383B78212354A50034A6AC /* AppDelegate.swift in Sources */,
+				84383B90212355A60034A6AC /* Process.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84FE9095212310D7005AF842 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -506,7 +629,31 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		84383B9B212378710034A6AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84FE9099212310D7005AF842 /* GPUEngine-iOS */;
+			targetProxy = 84383B9A212378710034A6AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		84383B7B212354A50034A6AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84383B7C212354A50034A6AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84383B80212354A60034A6AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84383B81212354A60034A6AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		84FE911221231473005AF842 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -518,6 +665,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84383B85212354A60034A6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA9654EX3X;
+				INFOPLIST_FILE = "GPU Demo iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LichenLabs.GPU-Demo-iOS";
+				PRODUCT_NAME = "GPUE Demo";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "GPU Demo iOS/GPU Demo iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84383B86212354A60034A6AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UA9654EX3X;
+				INFOPLIST_FILE = "GPU Demo iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LichenLabs.GPU-Demo-iOS";
+				PRODUCT_NAME = "GPUE Demo";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "GPU Demo iOS/GPU Demo iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		84FE90A0212310D7005AF842 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -640,6 +831,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UA9654EX3X;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -653,6 +845,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LichenLabs.GPUEngine;
 				PRODUCT_NAME = GPUEngine;
 				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -663,6 +856,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UA9654EX3X;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -676,6 +870,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LichenLabs.GPUEngine;
 				PRODUCT_NAME = GPUEngine;
 				SKIP_INSTALL = YES;
+				STRIP_SWIFT_SYMBOLS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -775,6 +970,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84383B84212354A60034A6AC /* Build configuration list for PBXNativeTarget "GPU Demo iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84383B85212354A60034A6AC /* Debug */,
+				84383B86212354A60034A6AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84FE9094212310D7005AF842 /* Build configuration list for PBXProject "GPUEngine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

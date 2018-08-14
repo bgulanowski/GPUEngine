@@ -22,7 +22,7 @@
         _provider = provider;
         _view = view;
         _view.delegate = self;
-        _viewportSize = view.bounds.size;
+        [self mtkView:_view drawableSizeWillChange:view.bounds.size];
     }
     return self;
 }
@@ -39,11 +39,20 @@
 #pragma mark - MTKViewDelegate
 
 - (void)mtkView:(MTKView *)view drawableSizeWillChange:(CGSize)size {
-    _viewportSize = size;
+    float scale = view.contentScaleFactor;
+    _viewportSize = CGSizeMake(size.width * scale, size.height * scale);
 }
 
 - (void)drawInMTKView:(MTKView *)view {
+#if 1
     [_provider.process runWithDrawable:self.drawable];
+#else
+    id<GPUEProcess> process = _provider.process;
+    id<MTLDrawable> drawable = self.drawable;
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INTERACTIVE, 0), ^{
+        [process runWithDrawable:drawable];
+    });
+#endif
 }
 
 - (MTLViewport)viewport {

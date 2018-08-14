@@ -52,7 +52,10 @@
 - (void)configureEncoderResources:(id<MTLComputeCommandEncoder>)encoder {}
 
 - (void)dispatchWithEncoder:(id<MTLComputeCommandEncoder>)encoder {
-    [encoder dispatchThreads:self.threadCount threadsPerThreadgroup:self.threadgroupSize];
+    MTLSize count = self.threadCount;
+    MTLSize groups = MTLSizeMake(count.width/_threadgroupSize.width, count.height/_threadgroupSize.height, count.depth/_threadgroupSize.depth);
+    [encoder dispatchThreadgroups:groups threadsPerThreadgroup:_threadgroupSize];
+//    [encoder dispatchThreads:self.threadCount threadsPerThreadgroup:self.threadgroupSize];
     _hasRun = YES;
 }
 
