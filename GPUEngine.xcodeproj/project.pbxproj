@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		84383B6421232A8C0034A6AC /* Process.m in Sources */ = {isa = PBXBuildFile; fileRef = 84383B6321232A8C0034A6AC /* Process.m */; };
+		84383B6B21234D390034A6AC /* NSImage+Bitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 84383B6921234D390034A6AC /* NSImage+Bitmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84383B6C21234D390034A6AC /* NSImage+Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 84383B6A21234D390034A6AC /* NSImage+Bitmap.m */; };
+		84383B6F21234D8E0034A6AC /* UIImage+Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 84383B6D21234D8D0034A6AC /* UIImage+Bitmap.m */; };
+		84383B7021234D8E0034A6AC /* UIImage+Bitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 84383B6E21234D8D0034A6AC /* UIImage+Bitmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE909F212310D7005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE909D212310D7005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90AE212310F8005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90AC212310F8005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90BD21231155005AF842 /* GPUERenderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B321231155005AF842 /* GPUERenderTask.m */; };
@@ -82,6 +86,11 @@
 /* Begin PBXFileReference section */
 		84383B6221232A8C0034A6AC /* Process.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Process.h; sourceTree = "<group>"; };
 		84383B6321232A8C0034A6AC /* Process.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Process.m; sourceTree = "<group>"; };
+		84383B68212344D70034A6AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84383B6921234D390034A6AC /* NSImage+Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+Bitmap.h"; sourceTree = "<group>"; };
+		84383B6A21234D390034A6AC /* NSImage+Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+Bitmap.m"; sourceTree = "<group>"; };
+		84383B6D21234D8D0034A6AC /* UIImage+Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bitmap.m"; sourceTree = "<group>"; };
+		84383B6E21234D8D0034A6AC /* UIImage+Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bitmap.h"; sourceTree = "<group>"; };
 		84FE909A212310D7005AF842 /* GPUEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FE909D212310D7005AF842 /* GPUEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUEngine.h; sourceTree = "<group>"; };
 		84FE909E212310D7005AF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,6 +170,7 @@
 		84FE9090212310D7005AF842 = {
 			isa = PBXGroup;
 			children = (
+				84383B68212344D70034A6AC /* README.md */,
 				84FE90B22123113A005AF842 /* Shared */,
 				84FE909C212310D7005AF842 /* GPUEngine-iOS */,
 				84FE90AB212310F8005AF842 /* GPUEngine-Mac */,
@@ -185,6 +195,8 @@
 			children = (
 				84FE909D212310D7005AF842 /* GPUEngine.h */,
 				84FE909E212310D7005AF842 /* Info.plist */,
+				84383B6E21234D8D0034A6AC /* UIImage+Bitmap.h */,
+				84383B6D21234D8D0034A6AC /* UIImage+Bitmap.m */,
 			);
 			path = "GPUEngine-iOS";
 			sourceTree = "<group>";
@@ -192,6 +204,8 @@
 		84FE90AB212310F8005AF842 /* GPUEngine-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				84383B6921234D390034A6AC /* NSImage+Bitmap.h */,
+				84383B6A21234D390034A6AC /* NSImage+Bitmap.m */,
 				84FE90AC212310F8005AF842 /* GPUEngine.h */,
 				84FE90AD212310F8005AF842 /* Info.plist */,
 			);
@@ -279,6 +293,7 @@
 				84FE90DC212311A5005AF842 /* GPUEBufferToTexture.h in Headers */,
 				84FE90EC212312CC005AF842 /* GPUEComputePyramid.h in Headers */,
 				84FE90E8212312CC005AF842 /* GPUEDrawFlatMesh.h in Headers */,
+				84383B7021234D8E0034A6AC /* UIImage+Bitmap.h in Headers */,
 				84FE90C721231155005AF842 /* GPUEEngine.h in Headers */,
 				84FE90FF21231335005AF842 /* GPUEShaderTypes.h in Headers */,
 				84FE9129212326EC005AF842 /* GPUERenderer.h in Headers */,
@@ -306,6 +321,7 @@
 				84FE90E9212312CC005AF842 /* GPUEDrawFlatMesh.h in Headers */,
 				84FE90C821231155005AF842 /* GPUEEngine.h in Headers */,
 				84FE910021231335005AF842 /* GPUEShaderTypes.h in Headers */,
+				84383B6B21234D390034A6AC /* NSImage+Bitmap.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +456,7 @@
 				84FE910321231354005AF842 /* GPUETexturePresent.m in Sources */,
 				84FE90DA212311A5005AF842 /* GPUEBufferToTexture.m in Sources */,
 				84FE90BF21231155005AF842 /* GPUEBlitTask.m in Sources */,
+				84383B6F21234D8E0034A6AC /* UIImage+Bitmap.m in Sources */,
 				84FE90C121231155005AF842 /* GPUEEngine.m in Sources */,
 				84FE90F6212312CC005AF842 /* GPUEDrawFlatMesh.m in Sources */,
 				84FE90D6212311A5005AF842 /* GPUECGImageUtilities.m in Sources */,
@@ -465,6 +482,7 @@
 				84FE90C221231155005AF842 /* GPUEEngine.m in Sources */,
 				84FE90F7212312CC005AF842 /* GPUEDrawFlatMesh.m in Sources */,
 				84FE90D7212311A5005AF842 /* GPUECGImageUtilities.m in Sources */,
+				84383B6C21234D390034A6AC /* NSImage+Bitmap.m in Sources */,
 				84FE90F5212312CC005AF842 /* GPUEDrawFlatMesh.metal in Sources */,
 				84FE9128212326EC005AF842 /* GPUERenderer.m in Sources */,
 				84FE90BE21231155005AF842 /* GPUERenderTask.m in Sources */,

@@ -40,3 +40,5 @@ FOUNDATION_EXPORT const unsigned char GPUEngineVersionString[];
 // Utilities
 #import "GPUECGImageUtilities.h"
 #import "GPUERenderer.h"
+
+#import "NSImage+Bitmap.h"
