@@ -13,18 +13,18 @@
 #import "GPUETask.h"
 
 @protocol GPUETask;
-@class GPUEngine;
+@class GPUEEngine;
 
 @protocol GPUEProcess <NSObject>
 
-@property (nonatomic, readonly) GPUEngine *engine;
+@property (nonatomic, readonly) GPUEEngine *engine;
 @property (nonatomic, readonly) id<MTLDevice> device;
 @property (nonatomic, readonly) NSArray<id<GPUETask>> *tasks; // provided by subclasses
 @property (nonatomic, readonly) BOOL needsRefresh;
 @property (nonatomic, copy) dispatch_block_t refresh;
 @property (nonatomic, copy) dispatch_block_t onComplete;
 
-- (instancetype)initWithEngine:(GPUEngine *)engine;
+- (instancetype)initWithEngine:(GPUEEngine *)engine;
 
 - (void)run;
 - (void)runWithDrawable:(id<MTLDrawable>)drawable;
