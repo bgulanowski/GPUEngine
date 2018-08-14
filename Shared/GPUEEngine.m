@@ -21,7 +21,11 @@
 
 - (instancetype)init {
     id<MTLDevice> device = MTLCreateSystemDefaultDevice();
-    id<MTLLibrary> library = [device newDefaultLibrary];
+    NSError *error = nil;
+    id<MTLLibrary> library = [device newDefaultLibraryWithBundle:[NSBundle bundleForClass:[self class]] error:&error];
+    if (nil == library || error) {
+        NSLog(@"Unable to load library");
+    }
     return [self initWithDevice:device library:library];
 }
 
