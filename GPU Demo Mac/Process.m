@@ -16,7 +16,6 @@
 @implementation Process
 
 @synthesize engine = _engine;
-@synthesize refresh=_refresh;
 @synthesize onComplete=_onComplete;
 
 - (id<MTLDevice>)device {
