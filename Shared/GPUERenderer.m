@@ -39,7 +39,11 @@
 #pragma mark - MTKViewDelegate
 
 - (void)mtkView:(MTKView *)view drawableSizeWillChange:(CGSize)size {
+#if TARGET_OS_IPHONE
     float scale = view.contentScaleFactor;
+#else
+    float scale = 1.0;
+#endif
     _viewportSize = CGSizeMake(size.width * scale, size.height * scale);
 }
 
