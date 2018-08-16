@@ -10,8 +10,6 @@
 
 @import Metal;
 
-#import "GPUETask.h"
-
 @protocol GPUETask;
 @class GPUEEngine;
 
