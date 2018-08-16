@@ -12,6 +12,7 @@
 
 @property (nonatomic) id<MTLDevice> device;
 @property (nonatomic) id<MTLCommandQueue> commandQueue;
+@property (nonatomic) NSMutableDictionary<NSString*, id<MTLLibrary>> *libraries;
 
 @end
 
@@ -22,9 +23,13 @@
 - (instancetype)init {
     id<MTLDevice> device = MTLCreateSystemDefaultDevice();
     NSError *error = nil;
-    id<MTLLibrary> library = [device newDefaultLibraryWithBundle:[NSBundle bundleForClass:[self class]] error:&error];
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    id<MTLLibrary> library = [device newDefaultLibraryWithBundle:bundle error:&error];
     if (nil == library || error) {
-        NSLog(@"Unable to load library");
+        NSLog(@"Unable to load library: %@", error);
+    }
+    else {
+        library.label = bundle.bundleIdentifier;
     }
     return [self initWithDevice:device library:library];
 }
@@ -37,6 +42,9 @@
         _device = device;
         _library = library;
         _commandQueue = [device newCommandQueue];
+        _libraries = [NSMutableDictionary new];
+        _libraries[_library.label] = library;
+        _appLibrary = [self libraryForBundle:[NSBundle mainBundle]];
     }
     return self;
 }
@@ -48,6 +56,26 @@
 }
 
 #pragma mark - GPUEngine
+
+- (id<MTLLibrary>)libraryForBundle:(NSBundle *)bundle error:(NSError **)error {
+    id<MTLLibrary> library = _libraries[bundle.bundleIdentifier];
+    if (nil == library) {
+        library = [_device newDefaultLibraryWithBundle:bundle error:error];
+        if (library) {
+            library.label = bundle.bundleIdentifier;
+            _libraries[library.label] = library;
+        }
+    }
+    return library;
+}
+
+- (id<MTLLibrary>)libraryForBundle:(NSBundle *)bundle {
+    return [self libraryForBundle:bundle error:NULL];
+}
+
+- (id<MTLLibrary>)libraryForClass:(Class)klass {
+    return [self libraryForBundle:[NSBundle bundleForClass:klass]];
+}
 
 - (void)runTasks:(NSArray<id<GPUETask>> *)tasks withDrawable:(id<MTLDrawable>)drawable {
     
