@@ -28,6 +28,7 @@ FOUNDATION_EXPORT const unsigned char GPUEngineVersionString[];
 #import "GPUEBufferToTexture.h"
 #import "GPUEDrawFlatMesh.h"
 #import "GPUEDrawTexture.h"
+#import "GPUEResourceSync.h"
 #import "GPUETexturePresent.h"
 
 // Sample Tasks

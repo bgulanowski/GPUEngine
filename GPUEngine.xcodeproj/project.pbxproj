@@ -24,6 +24,8 @@
 		84383B99212378710034A6AC /* GPUEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84FE909A212310D7005AF842 /* GPUEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84383B9D212379240034A6AC /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84383B8D212355250034A6AC /* Metal.framework */; };
 		84383B9E212379240034A6AC /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84383B8B212355210034A6AC /* MetalKit.framework */; };
+		844FDB012126053D003C597B /* GPUEResourceSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 844FDAFF2126053D003C597B /* GPUEResourceSync.m */; };
+		844FDB022126053D003C597B /* GPUEResourceSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 844FDB002126053D003C597B /* GPUEResourceSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE909F212310D7005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE909D212310D7005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90AE212310F8005AF842 /* GPUEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 84FE90AC212310F8005AF842 /* GPUEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84FE90BD21231155005AF842 /* GPUERenderTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE90B321231155005AF842 /* GPUERenderTask.m */; };
@@ -138,6 +140,8 @@
 		84383B8D212355250034A6AC /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		84383B8F212355A60034A6AC /* Process.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Process.swift; sourceTree = "<group>"; };
 		84383B94212377D90034A6AC /* GPU Demo iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPU Demo iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		844FDAFF2126053D003C597B /* GPUEResourceSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUEResourceSync.m; sourceTree = "<group>"; };
+		844FDB002126053D003C597B /* GPUEResourceSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUEResourceSync.h; sourceTree = "<group>"; };
 		84FE909A212310D7005AF842 /* GPUEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GPUEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FE909D212310D7005AF842 /* GPUEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUEngine.h; sourceTree = "<group>"; };
 		84FE909E212310D7005AF842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,6 +284,8 @@
 		84FE90AB212310F8005AF842 /* GPUEngine-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				844FDB002126053D003C597B /* GPUEResourceSync.h */,
+				844FDAFF2126053D003C597B /* GPUEResourceSync.m */,
 				84383B6921234D390034A6AC /* NSImage+Bitmap.h */,
 				84383B6A21234D390034A6AC /* NSImage+Bitmap.m */,
 				84FE90AC212310F8005AF842 /* GPUEngine.h */,
@@ -313,14 +319,14 @@
 				84FE90F9212312EE005AF842 /* GPUEMesh.h */,
 				84FE90F8212312EE005AF842 /* GPUEMesh.m */,
 				84FE90BC21231155005AF842 /* GPUEProcess.h */,
+				84FE9126212326EC005AF842 /* GPUERenderer.h */,
+				84FE9125212326EC005AF842 /* GPUERenderer.m */,
 				84FE90B621231155005AF842 /* GPUERenderTask.h */,
 				84FE90B321231155005AF842 /* GPUERenderTask.m */,
 				84FE90FE21231335005AF842 /* GPUEShaderTypes.h */,
 				84FE90B921231155005AF842 /* GPUETask.h */,
 				84FE910221231353005AF842 /* GPUETexturePresent.h */,
 				84FE910121231353005AF842 /* GPUETexturePresent.m */,
-				84FE9126212326EC005AF842 /* GPUERenderer.h */,
-				84FE9125212326EC005AF842 /* GPUERenderer.m */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				84FE90C821231155005AF842 /* GPUEEngine.h in Headers */,
 				84FE910021231335005AF842 /* GPUEShaderTypes.h in Headers */,
 				84383B6B21234D390034A6AC /* NSImage+Bitmap.h in Headers */,
+				844FDB022126053D003C597B /* GPUEResourceSync.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844FDB012126053D003C597B /* GPUEResourceSync.m in Sources */,
 				84FE90FB212312EE005AF842 /* GPUEMesh.m in Sources */,
 				84FE910421231354005AF842 /* GPUETexturePresent.m in Sources */,
 				84FE90DB212311A5005AF842 /* GPUEBufferToTexture.m in Sources */,
