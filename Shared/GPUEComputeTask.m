@@ -53,7 +53,9 @@
 
 - (void)dispatchWithEncoder:(id<MTLComputeCommandEncoder>)encoder {
     MTLSize count = self.threadCount;
-    MTLSize groups = MTLSizeMake(count.width/_threadgroupSize.width, count.height/_threadgroupSize.height, count.depth/_threadgroupSize.depth);
+    MTLSize groups = MTLSizeMake((count.width  - 1) / _threadgroupSize.width  + 1,
+                                 (count.height - 1) / _threadgroupSize.height + 1,
+                                 (count.depth  - 1) / _threadgroupSize.depth  + 1);
     [encoder dispatchThreadgroups:groups threadsPerThreadgroup:_threadgroupSize];
 //    [encoder dispatchThreads:self.threadCount threadsPerThreadgroup:self.threadgroupSize];
     _hasRun = YES;
