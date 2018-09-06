@@ -8,6 +8,8 @@
 
 #import "GPUEBufferToTexture.h"
 
+#import "GPUEShaderTypes.h"
+
 static id<MTLTexture> Texture(id<MTLDevice>device, vector_uint2 size);
 
 @implementation GPUEBufferToTexture
@@ -22,12 +24,20 @@ static id<MTLTexture> Texture(id<MTLDevice>device, vector_uint2 size);
         _threadCount = MTLSizeMake(size.x, size.y, 1);
         _inBuffer = buffer;
         _outTexture = Texture(library.device, size);
+        _min = 0;
+        _max = 1.0f;
+        _map = YES;
     }
     return self;
 }
 
 - (void)configureEncoderResources:(id<MTLComputeCommandEncoder>)encoder {
     [encoder setBuffer:_inBuffer offset:0 atIndex:0];
+    ConvertOptions options;
+    options.min = _min;
+    options.max = _max;
+    options.map = _map;
+    [encoder setBytes:&options length:sizeof(options) atIndex:1];
     [encoder setTexture:_outTexture atIndex:0];
 }
 

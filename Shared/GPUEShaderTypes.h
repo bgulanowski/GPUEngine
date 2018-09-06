@@ -23,4 +23,10 @@ typedef struct {
     vector_float2 uv;
 } ColourVertex;
 
+typedef struct {
+    float min;
+    float max;
+    bool map;
+} ConvertOptions;
+
 #endif /* GPUEShaderTypes_h */
