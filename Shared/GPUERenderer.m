@@ -11,15 +11,21 @@
 #import "GPUEngine.h"
 #import "GPUEProcess.h"
 
+@interface GPUERenderer ()
+@property (readonly) id<GPUEProcess> process;
+@end
+
 @implementation GPUERenderer {
     id<GPUEProcessProvider> _provider;
     CGSize _viewportSize;
+    BOOL _useProperty;
 }
 
 - (instancetype)initWithProvider:(nullable id<GPUEProcessProvider>)provider view:(MTKView *)view {
     self = [super init];
     if (self) {
         _provider = provider;
+        _useProperty = [_provider respondsToSelector:@selector(process)];
         _view = view;
         _view.delegate = self;
         [self mtkView:_view drawableSizeWillChange:view.bounds.size];
@@ -29,9 +35,13 @@
 
 #pragma mark - Accessors
 
+- (id<GPUEProcess>)process {
+    return _useProperty ? _provider.process : [_provider processForRenderer:self];
+}
+
 - (id<MTLDrawable>)drawable {
     if (_view.device == nil) {
-        _view.device = _provider.process.device;
+        _view.device = self.process.device;
     }
     return _view.currentDrawable;
 }
@@ -49,7 +59,7 @@
 
 - (void)drawInMTKView:(MTKView *)view {
 #if 1
-    [_provider.process runWithDrawable:self.drawable];
+    [self.process runWithDrawable:self.drawable];
 #else
     id<GPUEProcess> process = _provider.process;
     id<MTLDrawable> drawable = self.drawable;

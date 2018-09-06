@@ -14,8 +14,12 @@
 
 @protocol GPUEProcess;
 
+@class GPUERenderer;
+
 @protocol GPUEProcessProvider<NSObject>
+@optional
 @property (readonly) id<GPUEProcess> process;
+- (id<GPUEProcess>)processForRenderer:(GPUERenderer *)render;
 @end
 
 NS_ASSUME_NONNULL_BEGIN
