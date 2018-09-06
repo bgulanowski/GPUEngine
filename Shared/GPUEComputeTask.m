@@ -52,12 +52,16 @@
 - (void)configureEncoderResources:(id<MTLComputeCommandEncoder>)encoder {}
 
 - (void)dispatchWithEncoder:(id<MTLComputeCommandEncoder>)encoder {
+#if 0
+    // This is used on older iPhones
     MTLSize count = self.threadCount;
     MTLSize groups = MTLSizeMake((count.width  - 1) / _threadgroupSize.width  + 1,
                                  (count.height - 1) / _threadgroupSize.height + 1,
                                  (count.depth  - 1) / _threadgroupSize.depth  + 1);
     [encoder dispatchThreadgroups:groups threadsPerThreadgroup:_threadgroupSize];
-//    [encoder dispatchThreads:self.threadCount threadsPerThreadgroup:self.threadgroupSize];
+#else
+    [encoder dispatchThreads:self.threadCount threadsPerThreadgroup:self.threadgroupSize];
+#endif
     _hasRun = YES;
 }
 
